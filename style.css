@@ -1,0 +1,49 @@
+.background {
+  background-image: linear-gradient(220deg, #000000, #4296af, #a3c6d0, #4296af);
+}
+
+.custom-btn {
+  color: #ffffff; /* Cor do texto */
+  border-color: #000; /* Cor da borda */
+}
+
+.custom-btn:hover,
+.custom-btn:focus,
+.custom-btn:active {
+  color: #000000; /* Cor do texto quando o botão está em foco ou ativo */
+  background-color: #ffffff; /* Cor de fundo quando o botão está em foco ou ativo */
+  border-color: #000; /* Cor da borda quando o botão está em foco ou ativo */
+}
+
+.custom-btn-2 {
+  color: #fff; /* Cor do texto */
+  background-color: #000; /* Cor de fundo */
+  border-color: #000; /* Cor da borda */
+}
+
+.custom-btn-2:hover,
+.custom-btn-2:focus,
+.custom-btn-2:active {
+  color: #000; /* Cor do texto quando o botão está em foco ou ativo */
+  background-color: #fff; /* Cor de fundo quando o botão está em foco ou ativo */
+  border-color: #000; /* Cor da borda quando o botão está em foco ou ativo */
+}
+
+.custom-image {
+  width: 200px;
+  height: 100%;
+  border-radius: 200%;
+}
+
+@media (max-width: 600px) {
+  .custom-image,
+  h1,
+  p {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .custom-image {
+    display: block;
+  }
+}

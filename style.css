@@ -31,19 +31,45 @@
 
 .custom-image {
   width: 200px;
-  height: 100%;
-  border-radius: 200%;
+  height: auto;
+  border-radius: 50%; /* Imagem redonda */
 }
 
-@media (max-width: 600px) {
-  .custom-image,
-  h1,
-  p {
-    margin: 0 auto;
-    text-align: center;
+/* Media queries */
+@media (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
   .custom-image {
     display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 30px; /* Ajuste conforme necessário */
+    width: 150px; /* Ajuste conforme necessário */
+  }
+
+  .h1, .p {
+    text-align: center;
+    margin: 0;
+  }
+
+  /* Responsividade para a seção de projetos */
+  .row-cols-1, .row-cols-sm-2, .row-cols-md-3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col {
+    width: 100%;
+    margin-bottom: 20px; /* Espaçamento entre os projetos */
+  }
+
+  .card {
+    width: 100%;
   }
 }
